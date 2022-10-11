@@ -1,0 +1,24 @@
+<!DOCTYPE html> {% extends 'app/base.html' %} {% load static %}
+<link rel="stylesheet" href="{% staic 'css/core.css' %}">
+
+<head>
+
+    <body>
+
+        <body>
+            {% block content %}
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+
+            <button type="button" class="btn btn-link">Link</button>endblock content %} {%block content1%}
+            <p>this is {{name}} page</p>
+            {%endblock content1%}
+        </body>
+    </body>
+</head>

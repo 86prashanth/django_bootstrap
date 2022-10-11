@@ -1,0 +1,22 @@
+<!DOCTYPE html>{% extends 'app/base.html' %} {% load static %}
+<html>
+<title>{%block title %}Home{%endblock title %}</title>
+<link rel="stylesheet" href="{% static 'css/core.css' %}">
+
+<head>
+
+    <body>
+        {% block content %}
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-Success">Success</button>
+        <button type="button" class="btn btn-Danger">Danger</button>
+        <button type="button" class="btn btn-Warning">Warning</button>
+        <button type="button" class="btn btn-info">info</button>
+        <button type="button" class="btn btn-light">light</button>
+        <button type="button" class="btn btn-Dark">Dark</button>
+        <button type="button" class="btn btn-link">link</button>{%endblock content %} {%block content1%}
+        <p>this is {{name}} page</p>
+        {%endblock content1%}
+    </body>
+</head>
